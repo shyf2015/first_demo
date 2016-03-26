@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人民币读数</title>
+<link rel="stylesheet" href="javascript/rmb.js">
+</head>
+<body>
+	<input type="text" id="input">
+	<a href="javascript:void(0)" id="a">转换</a>
+	<h3 id="h3"></h3>
+</body>
+<script src="rmb.js"></script>
+<script>
+	var h3=document.getElementById('h3');
+	var hh=document.getElementById('a');
+	hh.onclick=function(){
+		var input=document.getElementById('input').value;
+		console.log(input);
+		h3.innerHTML=rmb(input);		
+	}
+</script>
+</html>
